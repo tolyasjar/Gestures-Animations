@@ -1,18 +1,14 @@
 //
-//  ViewController.h
+//  NotificationView.m
 //  Gestures&Animations
 //
 //  Created by Toleen Jaradat on 6/27/16.
 //  Copyright © 2016 Toleen Jaradat. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "NotificationView.h"
 
+@implementation NotificationView
 
-@interface ViewController : UIViewController
-{
-NotificationView *notificationView;
-}
+
 @end
-

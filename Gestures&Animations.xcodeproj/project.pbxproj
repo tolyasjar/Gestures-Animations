@@ -13,6 +13,7 @@
 		C8D9E65C1D218ED6003157D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D9E65A1D218ED6003157D1 /* Main.storyboard */; };
 		C8D9E65E1D218ED6003157D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D9E65D1D218ED6003157D1 /* Assets.xcassets */; };
 		C8D9E6611D218ED6003157D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D9E65F1D218ED6003157D1 /* LaunchScreen.storyboard */; };
+		C8D9E66A1D219BE7003157D1 /* NotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D9E6691D219BE7003157D1 /* NotificationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C8D9E65D1D218ED6003157D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8D9E6601D218ED6003157D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8D9E6621D218ED6003157D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D9E6681D219BE7003157D1 /* NotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationView.h; sourceTree = "<group>"; };
+		C8D9E6691D219BE7003157D1 /* NotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C8D9E6551D218ED6003157D1 /* AppDelegate.m */,
 				C8D9E6571D218ED6003157D1 /* ViewController.h */,
 				C8D9E6581D218ED6003157D1 /* ViewController.m */,
+				C8D9E6681D219BE7003157D1 /* NotificationView.h */,
+				C8D9E6691D219BE7003157D1 /* NotificationView.m */,
 				C8D9E65A1D218ED6003157D1 /* Main.storyboard */,
 				C8D9E65D1D218ED6003157D1 /* Assets.xcassets */,
 				C8D9E65F1D218ED6003157D1 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				C8D9E6591D218ED6003157D1 /* ViewController.m in Sources */,
 				C8D9E6561D218ED6003157D1 /* AppDelegate.m in Sources */,
 				C8D9E6531D218ED6003157D1 /* main.m in Sources */,
+				C8D9E66A1D219BE7003157D1 /* NotificationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +308,7 @@
 				C8D9E6671D218ED6003157D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

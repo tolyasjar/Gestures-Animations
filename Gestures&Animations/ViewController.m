@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NotificationView.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    notificationView = [[UIView alloc] initWithFrame:CGRectMake(0, -1136, 640, 1136)];
+     notificationView = [[NotificationView alloc]initWithFrame:CGRectMake(self.view.frame.origin.x,self.view.frame.origin.y - self.view.frame.size.height,self.view.frame.size.width,self.view.frame.size.height)];
+    
     notificationView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:notificationView];
     
@@ -38,9 +40,9 @@
     
     [UIView animateWithDuration:0.75 animations:^{
         
-        notificationView.frame = CGRectMake(0,0,640,1136);
-
+        notificationView.frame = CGRectMake(self.view.frame.origin.x,self.view.frame.origin.y,self.view.frame.size.width,self.view.frame.size.height);
     }];
+    
 }
 
 -(void)swipedUp:(UIGestureRecognizer *)recognizer {
@@ -48,8 +50,9 @@
     
     [UIView animateWithDuration:0.75 animations:^{
         
-        notificationView.frame = CGRectMake(0,-1136,640,1136);
+        notificationView.frame = CGRectMake(self.view.frame.origin.x,self.view.frame.origin.y - self.view.frame.size.height,self.view.frame.size.width,self.view.frame.size.height);
     }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
