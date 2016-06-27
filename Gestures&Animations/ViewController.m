@@ -16,12 +16,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    notificationView = [[UIView alloc] initWithFrame:CGRectMake(0, -1136, 640, 1136)];
+    notificationView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:notificationView];
+    
+    UISwipeGestureRecognizer *swipeUpGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedUp:)];
+    
+    UISwipeGestureRecognizer *swipeDownGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedDown:)];
+ 
+    swipeUpGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
+    swipeDownGestureRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
+    
+    [self.view addGestureRecognizer:swipeUpGestureRecognizer];
+    [self.view addGestureRecognizer:swipeDownGestureRecognizer];
+}
+
+-(void)swipedDown:(UIGestureRecognizer *) recognizer {
+    
+    NSLog(@"Swiping down");
+    
+    [UIView animateWithDuration:0.75 animations:^{
+        
+        notificationView.frame = CGRectMake(0,0,640,1136);
+
+    }];
+}
+
+-(void)swipedUp:(UIGestureRecognizer *)recognizer {
+    NSLog(@"Swiping Up");
+    
+    [UIView animateWithDuration:0.75 animations:^{
+        
+        notificationView.frame = CGRectMake(0,-1136,640,1136);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

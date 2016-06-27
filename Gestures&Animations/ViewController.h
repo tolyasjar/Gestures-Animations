@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+{
+    
+UIView *notificationView;
+    
+}
 
 @end
 
