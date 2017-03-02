@@ -1,2 +1,2 @@
 # Gestures-Animations
-![alt tag](https://media.giphy.com/media/l44Qs5wUaX6iKAFsk/source.gif)
+![alt tag](https://github.com/tolyasjar/Gestures-Animations/blob/master/Gestures&Animation.gif?raw=true)
